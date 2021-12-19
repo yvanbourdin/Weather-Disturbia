@@ -69,3 +69,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+Weather Disturbia/Temp/UnityLockfile
+
+Weather Disturbia/Library/shadercompiler-UnityShaderCompiler.exe0.log
