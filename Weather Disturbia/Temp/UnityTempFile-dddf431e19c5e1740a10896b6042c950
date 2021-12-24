@@ -286,10 +286,15 @@
 /define:ENABLE_LEGACY_INPUT_MANAGER
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
+Assets\DeathZone.cs
 Assets\Scripts\CameraFollow.cs
+Assets\Scripts\DontDestroyOnLoadScene.cs
 Assets\Scripts\EnemyPatrol.cs
 Assets\Scripts\HealthBar.cs
+Assets\Scripts\Inventory.cs
+Assets\Scripts\LoadSpecificScene.cs
 Assets\Scripts\PickUpObject.cs
 Assets\Scripts\PlayerHealth.cs
 Assets\Scripts\PlayerMovement.cs
+Assets\Scripts\PlayerSpawn.cs
 Assets\Scripts\WeakSpot.cs
