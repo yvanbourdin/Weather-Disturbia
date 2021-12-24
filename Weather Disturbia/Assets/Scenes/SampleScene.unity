@@ -1811,6 +1811,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  invicibilityTimeAfterHit: 1
+  invicibilityFlashDelay: 0.15
+  isInvicible: 0
+  graphics: {fileID: 1216341542}
   healthBar: {fileID: 542897641}
 --- !u!1 &1257473112
 GameObject:
@@ -4977,6 +4981,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 705824914}
   - {fileID: 893856735}
+  damageOnCollision: 20
   graphics: {fileID: 2106590603}
 --- !u!61 &2106590602
 BoxCollider2D:
