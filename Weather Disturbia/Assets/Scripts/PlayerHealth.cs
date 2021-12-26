@@ -76,6 +76,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.enabled = false; // Block character movements (disable PlayerMovement script)
         PlayerMovement.instance.animator.SetTrigger("Die"); // Play death animation
         PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic; // Prevent physical interactions between the other elements of the scene (Disable the physic of the character)
+        PlayerMovement.instance.rb.velocity = Vector3.zero; // Reset the forces applied to the character
         PlayerMovement.instance.playerCollider.enabled = false;
         GameOverManager.instance.OnPlayerDeath();
     }
