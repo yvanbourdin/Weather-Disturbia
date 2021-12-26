@@ -288,9 +288,12 @@
 /define:CSHARP_7_3_OR_NEWER
 Assets\Scripts\CameraFollow.cs
 Assets\Scripts\Checkpoint.cs
+Assets\Scripts\CurrentSceneManager.cs
 Assets\Scripts\DeathZone.cs
 Assets\Scripts\DontDestroyOnLoadScene.cs
 Assets\Scripts\EnemyPatrol.cs
+Assets\Scripts\GameOverManager.cs
+Assets\Scripts\HealPowerUp.cs
 Assets\Scripts\HealthBar.cs
 Assets\Scripts\Inventory.cs
 Assets\Scripts\Ladder.cs

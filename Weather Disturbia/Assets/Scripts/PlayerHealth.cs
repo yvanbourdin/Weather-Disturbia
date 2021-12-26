@@ -13,6 +13,18 @@ public class PlayerHealth : MonoBehaviour
     public SpriteRenderer graphics;
     public HealthBar healthBar;
 
+    public static PlayerHealth instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("There is more than one instance of PlayerHealth in the scene");
+            return;
+        }
+        instance = this;
+    }
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -27,16 +39,55 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void HealPlayer(int _amount)
+    {
+        if((currentHealth + _amount) > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+        else
+        {
+            currentHealth += _amount;
+        }
+        healthBar.SetHealth(currentHealth);
+    }
+
+    public void TakeDamage(int _damage)
     {
         if(!isInvicible)
         {
-            currentHealth -= damage;
+            currentHealth -= _damage;
             healthBar.SetHealth(currentHealth);
+
+            if(currentHealth <= 0)
+            {
+                Die();
+                return;
+            }
+
             isInvicible = true;
             StartCoroutine(InvicibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
         }
+    }
+
+    public void Die()
+    {
+        PlayerMovement.instance.enabled = false; // Block character movements (disable PlayerMovement script)
+        PlayerMovement.instance.animator.SetTrigger("Die"); // Play death animation
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Kinematic; // Prevent physical interactions between the other elements of the scene (Disable the physic of the character)
+        PlayerMovement.instance.playerCollider.enabled = false;
+        GameOverManager.instance.OnPlayerDeath();
+    }
+
+    public void Respawn()
+    {
+        PlayerMovement.instance.enabled = true;
+        PlayerMovement.instance.animator.SetTrigger("Respawn");
+        PlayerMovement.instance.rb.bodyType = RigidbodyType2D.Dynamic;
+        PlayerMovement.instance.playerCollider.enabled = true;
+        currentHealth = maxHealth;
+        healthBar.SetHealth(currentHealth);
     }
 
     public IEnumerator InvicibilityFlash()
