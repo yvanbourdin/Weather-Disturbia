@@ -12,8 +12,17 @@ public class SettingsMenu : MonoBehaviour
 
     Resolution[] resolutions;
 
+    public Slider musicSlider;
+    public Slider soundSlider;
+
     public void Start()
     {
+        audioMixer.GetFloat("Music", out float musicValueForSlider);
+        musicSlider.value = musicValueForSlider;
+
+        audioMixer.GetFloat("Sound", out float soundValueForSlider);
+        soundSlider.value = soundValueForSlider;
+
         // Get all possible screen resolutions of the player's screen once
         resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray(); 
         resolutionDropdown.ClearOptions();
@@ -39,9 +48,14 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = true;
     }
 
-    public void SetVolume(float _volume)
+    public void SetMusicVolume(float _volume)
     {
-        audioMixer.SetFloat("volume", _volume);
+        audioMixer.SetFloat("Music", _volume);
+    }
+
+    public void SetSoundVolume(float _volume)
+    {
+        audioMixer.SetFloat("Sound", _volume);
     }
 
     public void SetFullScreen(bool _isFullScreen)

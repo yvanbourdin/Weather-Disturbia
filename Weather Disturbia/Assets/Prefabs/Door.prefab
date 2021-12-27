@@ -122,3 +122,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: Level02
   fadeSystem: {fileID: 0}
+  nextLevelSound: {fileID: 8300000, guid: 0959102dfe225a848bb0464d2c0279b1, type: 3}

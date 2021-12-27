@@ -6,6 +6,7 @@ public class LoadSpecificScene : MonoBehaviour
 {
     public string sceneName;
     public Animator fadeSystem;
+    public AudioClip nextLevelSound;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class LoadSpecificScene : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            AudioManager.instance.PlayClipAt(nextLevelSound, transform.position);
             StartCoroutine(LoadNextScene());
         }
     }
