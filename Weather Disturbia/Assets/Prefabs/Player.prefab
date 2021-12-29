@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 11
   m_Sprite: {fileID: -4031619653288768660, guid: 8fbf2c627b5063f47a133a45a162d93b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -128,7 +128,7 @@ MonoBehaviour:
   groundCheckRadius: 0.4
   collisionLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 512
   rb: {fileID: 8996214262754738462}
   animator: {fileID: 8996214262754738459}
   spriteRenderer: {fileID: 8996214262754738449}
