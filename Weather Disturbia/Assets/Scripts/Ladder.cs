@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Ladder : MonoBehaviour
@@ -8,7 +6,7 @@ public class Ladder : MonoBehaviour
     public bool isInRange;
     private PlayerMovement playerMovement;
     public BoxCollider2D topCollider;
-    public Text interactUI;
+    private Text interactUI;
 
     // Start is called before the first frame update
     void Awake()

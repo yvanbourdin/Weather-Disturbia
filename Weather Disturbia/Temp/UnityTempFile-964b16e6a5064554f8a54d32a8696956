@@ -291,6 +291,7 @@
 Assets\Scripts\AudioManager.cs
 Assets\Scripts\CameraFollow.cs
 Assets\Scripts\Checkpoint.cs
+Assets\Scripts\Chest.cs
 Assets\Scripts\Credits.cs
 Assets\Scripts\CurrentSceneManager.cs
 Assets\Scripts\DeathZone.cs
