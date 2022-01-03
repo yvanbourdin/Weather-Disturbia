@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 8634710828457539780}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,9 +178,10 @@ GameObject:
   - component: {fileID: 8634710828586905770}
   - component: {fileID: 8634710828586905769}
   - component: {fileID: 8634710828586905773}
+  - component: {fileID: 1714427435}
   m_Layer: 0
   m_Name: Graphics
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,7 +238,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -4365678376696325385, guid: 8fbf2c627b5063f47a133a45a162d93b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -313,3 +314,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1714427435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8634710828586905768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0fc97e0eeca9043b3614c1107f14f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 3
+  objectToDestroy: {fileID: 8634710828457539779}
+  killSound: {fileID: 8300000, guid: 7e438a4b12beb1b4590e8d701ce0bfc0, type: 3}

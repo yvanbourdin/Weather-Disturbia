@@ -7,6 +7,9 @@ TagManager:
   - FadeSystem
   - PlayerSpawn
   - InteractUI
+  - PlayerProjectile
+  - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX
