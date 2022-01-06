@@ -12,7 +12,13 @@ public class PlayerProjectileSkill : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, 6);
+        // Change the direction of the projectile depending on the character orientation
+        if (PlayerMovement.instance.spriteRenderer.flipX)
+        {
+            speedProjectile = -speedProjectile;
+        }
+        
+        Destroy(gameObject, 3);
     }
 
     void Update()

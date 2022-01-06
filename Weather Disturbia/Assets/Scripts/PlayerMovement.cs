@@ -84,13 +84,19 @@ public class PlayerMovement : MonoBehaviour
 
     void Flip(float _velocity)
     {
-        if(_velocity > 0.1f)
+        if (_velocity > 0.1f)
         {
             spriteRenderer.flipX = false;
+            PlayerElementSkills.instance.shootPosition.transform.position = new Vector3(gameObject.transform.position.x + 1,
+                                                                                        PlayerElementSkills.instance.shootPosition.transform.position.y, 
+                                                                                        0);
         }
         else if(_velocity < -0.1f)
         {
             spriteRenderer.flipX = true;
+            PlayerElementSkills.instance.shootPosition.transform.position = new Vector3(gameObject.transform.position.x - 1, 
+                                                                                        PlayerElementSkills.instance.shootPosition.transform.position.y, 
+                                                                                        0);
         }
     }
 

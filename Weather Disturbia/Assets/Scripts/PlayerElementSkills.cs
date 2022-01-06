@@ -7,6 +7,18 @@ public class PlayerElementSkills : MonoBehaviour
     public GameObject projectileStandardIcePrefab;
     public Transform shootPosition;
 
+    public static PlayerElementSkills instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("There is more than one instance of PlayerElementSkills in the scene");
+            return;
+        }
+        instance = this;
+    }
+
     void Start()
     {
 
