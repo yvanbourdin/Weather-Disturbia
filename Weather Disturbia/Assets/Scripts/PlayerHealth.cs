@@ -100,7 +100,16 @@ public class PlayerHealth : MonoBehaviour
         {
             graphics.color = new Color(1f, 1f, 1f, 0f);
             yield return new WaitForSeconds(invicibilityFlashDelay);
-            graphics.color = new Color(1f, 1f, 1f, 1f);
+
+            if(PlayerElementSkills.instance.isIce)
+            {
+                graphics.color = PlayerElementSkills.instance.iceColor;
+            }
+            else
+            {
+                graphics.color = PlayerElementSkills.instance.fireColor;
+            }
+            
             yield return new WaitForSeconds(invicibilityFlashDelay);
         }
     }

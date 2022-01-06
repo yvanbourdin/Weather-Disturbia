@@ -84,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Flip(float _velocity)
     {
+        // Flip the sprite and the origine point of the player's projectile
         if (_velocity > 0.1f)
         {
             spriteRenderer.flipX = false;

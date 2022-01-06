@@ -1,11 +1,25 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerElementSkills : MonoBehaviour
 {
     public bool isIce;
+
+    public SpriteRenderer graphics;
+
     public GameObject projectileStandardFirePrefab;
     public GameObject projectileStandardIcePrefab;
     public Transform shootPosition;
+
+    public Color iceColor;
+    public Color fireColor;
+    public Sprite iceIcon;
+    public Sprite fireIcon;
+    public Button buttonChangeElement;
+    public Image imageNextElement;
+
+    private string iceModeText = "Mode GLACE";
+    private string fireModeText = "Mode FEU";
 
     public static PlayerElementSkills instance;
 
@@ -21,7 +35,7 @@ public class PlayerElementSkills : MonoBehaviour
 
     void Start()
     {
-
+        ChangeElement();
     }
 
     void Update()
@@ -54,12 +68,20 @@ public class PlayerElementSkills : MonoBehaviour
         if(isIce)
         {
             isIce = false;
-            Debug.Log("Fire mode !");
+            graphics.color = fireColor;
+            buttonChangeElement.GetComponent<Image>().sprite = fireIcon;
+            imageNextElement.GetComponent<Image>().sprite = iceIcon;
+            buttonChangeElement.GetComponentInChildren<Text>().text = fireModeText;
+            buttonChangeElement.GetComponentInChildren<Text>().color = fireColor;
         }
         else
         {
             isIce = true;
-            Debug.Log("Ice mode !");
+            graphics.color = iceColor;
+            buttonChangeElement.GetComponent<Image>().sprite = iceIcon;
+            imageNextElement.GetComponent<Image>().sprite = fireIcon;
+            buttonChangeElement.GetComponentInChildren<Text>().text = iceModeText;
+            buttonChangeElement.GetComponentInChildren<Text>().color = iceColor;
         }
     }
 }
