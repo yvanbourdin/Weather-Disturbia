@@ -16,7 +16,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update()
     {
-        if(isInRange && Input.GetKeyDown(KeyCode.E))
+        if(isInRange && Input.GetKeyDown(KeyCode.R))
         {
             TriggerDialogue();
         }

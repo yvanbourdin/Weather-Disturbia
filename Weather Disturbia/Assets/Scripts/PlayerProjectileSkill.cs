@@ -4,6 +4,7 @@ public class PlayerProjectileSkill : MonoBehaviour
 {
     public int damage;
     public float speedProjectile;
+    public float timeBeforeAutoDestroy = 3;
 
     public Rigidbody2D rb;
 
@@ -18,7 +19,7 @@ public class PlayerProjectileSkill : MonoBehaviour
             speedProjectile = -speedProjectile;
         }
         
-        Destroy(gameObject, 3);
+        Destroy(gameObject, timeBeforeAutoDestroy);
     }
 
     void Update()

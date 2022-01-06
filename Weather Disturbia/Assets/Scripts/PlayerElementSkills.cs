@@ -8,7 +8,9 @@ public class PlayerElementSkills : MonoBehaviour
     public SpriteRenderer graphics;
 
     public GameObject projectileStandardFirePrefab;
-    public GameObject projectileStandardIcePrefab;
+    public GameObject projectileStandardIcePrefab;    
+    public GameObject projectileSpecialFirePrefab;
+    public GameObject projectileSpecialIcePrefab;
     public Transform shootPosition;
 
     public Color iceColor;
@@ -45,7 +47,12 @@ public class PlayerElementSkills : MonoBehaviour
             ShootStandardSkill();
         }
 
-        if(Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            ShootSpecialSkill();
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
         {
             ChangeElement();
         }
@@ -63,7 +70,19 @@ public class PlayerElementSkills : MonoBehaviour
         }
     }
 
-    void ChangeElement()
+    void ShootSpecialSkill()
+    {
+        if(isIce)
+        {
+            Instantiate(projectileSpecialIcePrefab, shootPosition.position, shootPosition.rotation);
+        }
+        else
+        {
+            Instantiate(projectileSpecialFirePrefab, shootPosition.position, shootPosition.rotation);
+        }
+    }
+
+    public void ChangeElement()
     {
         if(isIce)
         {

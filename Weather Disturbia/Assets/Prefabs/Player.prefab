@@ -12,7 +12,7 @@ GameObject:
   m_Layer: 0
   m_Name: ShootPosition
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -233,11 +233,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isIce: 0
+  graphics: {fileID: 8996214262754738449}
   projectileStandardFirePrefab: {fileID: 8348734636990302520, guid: fdcbd62b100abe94e8f989b5bba02a7c,
     type: 3}
   projectileStandardIcePrefab: {fileID: 9222483600173801164, guid: 730dc8e9b6ad49446b34971efbf59924,
     type: 3}
+  projectileSpecialFirePrefab: {fileID: 658278649237934968, guid: de3dc2086c322e644bb5fbb854750126,
+    type: 3}
+  projectileSpecialIcePrefab: {fileID: 7924644750274898818, guid: b0607d2a2948bec4d921e786c21aa542,
+    type: 3}
   shootPosition: {fileID: 7130641759862667948}
+  iceColor: {r: 0, g: 0.86, b: 1, a: 1}
+  fireColor: {r: 1, g: 0.41, b: 0, a: 1}
+  iceIcon: {fileID: 21300000, guid: 24b07b2e12f1bfc4b95c29a0fc2360b8, type: 3}
+  fireIcon: {fileID: 21300000, guid: 3a008ca14f8aff6469ee4cf107e0ddb8, type: 3}
+  buttonChangeElement: {fileID: 0}
+  imageNextElement: {fileID: 0}
 --- !u!1 &8996214263663902223
 GameObject:
   m_ObjectHideFlags: 0
