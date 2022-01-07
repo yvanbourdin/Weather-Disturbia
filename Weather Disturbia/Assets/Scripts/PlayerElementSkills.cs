@@ -1,8 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerElementSkills : MonoBehaviour
 {
+    public float standardSkillCooldownMax;
+    public float specialSkillCooldownMax;
     public bool isIce;
 
     public SpriteRenderer graphics;
@@ -18,10 +21,14 @@ public class PlayerElementSkills : MonoBehaviour
     public Sprite iceIcon;
     public Sprite fireIcon;
     public Button buttonChangeElement;
-    public Image imageNextElement;
+    public Image iconNextElement;
+    public Button buttonStandardSkill;
+    public Button buttonSpecialSkill;
 
     private string iceModeText = "Mode GLACE";
     private string fireModeText = "Mode FEU";
+    private bool standardSkillOnCooldown = false;
+    private bool specialSkillOnCooldown = false;
 
     public static PlayerElementSkills instance;
 
@@ -42,23 +49,26 @@ public class PlayerElementSkills : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        // A = standard skill
+        if(Input.GetKeyDown(KeyCode.A) && !standardSkillOnCooldown)
         {
             ShootStandardSkill();
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        // E = special skill
+        if (Input.GetKeyDown(KeyCode.E) && !specialSkillOnCooldown)
         {
             ShootSpecialSkill();
         }
 
+        // C = change element
         if (Input.GetKeyDown(KeyCode.C))
         {
             ChangeElement();
         }
     }
 
-    void ShootStandardSkill()
+    public void ShootStandardSkill()
     {
         if (isIce)
         {
@@ -68,9 +78,11 @@ public class PlayerElementSkills : MonoBehaviour
         {
             Instantiate(projectileStandardFirePrefab, shootPosition.position, shootPosition.rotation);
         }
+
+        StartCoroutine(CooldownStandardSkill());
     }
 
-    void ShootSpecialSkill()
+    public void ShootSpecialSkill()
     {
         if(isIce)
         {
@@ -80,6 +92,8 @@ public class PlayerElementSkills : MonoBehaviour
         {
             Instantiate(projectileSpecialFirePrefab, shootPosition.position, shootPosition.rotation);
         }
+
+        StartCoroutine(CooldownSpecialSkill());
     }
 
     public void ChangeElement()
@@ -89,7 +103,7 @@ public class PlayerElementSkills : MonoBehaviour
             isIce = false;
             graphics.color = fireColor;
             buttonChangeElement.GetComponent<Image>().sprite = fireIcon;
-            imageNextElement.GetComponent<Image>().sprite = iceIcon;
+            iconNextElement.GetComponent<Image>().sprite = iceIcon;
             buttonChangeElement.GetComponentInChildren<Text>().text = fireModeText;
             buttonChangeElement.GetComponentInChildren<Text>().color = fireColor;
         }
@@ -98,9 +112,45 @@ public class PlayerElementSkills : MonoBehaviour
             isIce = true;
             graphics.color = iceColor;
             buttonChangeElement.GetComponent<Image>().sprite = iceIcon;
-            imageNextElement.GetComponent<Image>().sprite = fireIcon;
+            iconNextElement.GetComponent<Image>().sprite = fireIcon;
             buttonChangeElement.GetComponentInChildren<Text>().text = iceModeText;
             buttonChangeElement.GetComponentInChildren<Text>().color = iceColor;
         }
+    }
+
+    IEnumerator CooldownStandardSkill()
+    {
+        float timeLeft = standardSkillCooldownMax;
+        standardSkillOnCooldown = true;
+        buttonStandardSkill.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+
+        while (timeLeft > 0.01f)
+        {
+            buttonStandardSkill.GetComponentInChildren<Text>().text = " " + timeLeft.ToString();
+            timeLeft -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        buttonStandardSkill.GetComponentInChildren<Text>().text = "";
+        buttonStandardSkill.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        standardSkillOnCooldown = false;
+    }
+
+    public IEnumerator CooldownSpecialSkill()
+    {
+        float timeLeft = specialSkillCooldownMax;
+        specialSkillOnCooldown = true;
+        buttonSpecialSkill.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+
+        while (timeLeft > 0)
+        {
+            buttonSpecialSkill.GetComponentInChildren<Text>().text = " " + timeLeft.ToString();
+            timeLeft--;
+            yield return new WaitForSeconds(1);
+        }
+
+        buttonSpecialSkill.GetComponentInChildren<Text>().text = "";
+        buttonSpecialSkill.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        specialSkillOnCooldown = false;
     }
 }

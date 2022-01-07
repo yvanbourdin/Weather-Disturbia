@@ -580,8 +580,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "<SIZE=200><B>WEATHER  DISTURBIA</B>\r\n</SIZE>\r\n<SIZE=70>UNITY  PROJECT
-    \ BY</SIZE>\r\n<SIZE=70>BOURDIN  YVAN  &  FORMOSA  MATHIEU</SIZE>\r\n\r\n\r\n<SIZE=160><B>ASSETS
-    \ USED</B>\r\n</SIZE>\r\n\r\n<SIZE=120>- GRAPHICS -</SIZE>\r\n\r\n<SIZE=60>A  PLATFORMER
+    \ BY</SIZE>\r\n<SIZE=70>YVAN  BOURDIN  &  MATHIEU  FORMOSA</SIZE>\r\n\r\n\r\n<SIZE=160><B>ASSETS
+    \ USED</B>\r\n</SIZE>\r\n\r\n<SIZE=120>- GRAPHICS -</SIZE>\r\n\r\n<SIZE=60>FIRE
+    \ &  ICE ICONS\r\n<I>BY  YVAN  BOURDIN</I></SIZE>\r\n\n<SIZE=60>A  PLATFORMER
     \ IN  THE  FOREST\r\n<I>BY  BUTCH</I></SIZE>\r\n\r\n<SIZE=60>HEALTHBAR\r\n<I>BY
     \ BRACKEYS  TEAM</I></SIZE>\r\n\r\n<SIZE=60>PROPS\r\n<I>BY  ZEF  (TUTOUNITYFR)</I></SIZE>\r\n\r\n\r\n\r\n<SIZE=120>-
     AUDIO -</SIZE>\r\n\r\n<SIZE=60>HERO  IMMORTAL\r\n<I>BY  TREVOR  LENTZ</I></SIZE>\r\n\r\n<SIZE=60>BOB'S
