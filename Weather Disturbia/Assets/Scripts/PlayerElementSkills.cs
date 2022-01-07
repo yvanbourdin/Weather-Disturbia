@@ -16,14 +16,7 @@ public class PlayerElementSkills : MonoBehaviour
     public GameObject projectileSpecialIcePrefab;
     public Transform shootPosition;
 
-    public Color iceColor;
-    public Color fireColor;
-    public Sprite iceIcon;
-    public Sprite fireIcon;
-    public Button buttonChangeElement;
-    public Image iconNextElement;
-    public Button buttonStandardSkill;
-    public Button buttonSpecialSkill;
+    private ElementSystemUI elementUI; // get all UI about element (icons, sprites, buttons...)
 
     private string iceModeText = "Mode GLACE";
     private string fireModeText = "Mode FEU";
@@ -40,6 +33,8 @@ public class PlayerElementSkills : MonoBehaviour
             return;
         }
         instance = this;
+
+        elementUI = ElementSystemUI.instance; // get access to the element UI
     }
 
     void Start()
@@ -101,56 +96,64 @@ public class PlayerElementSkills : MonoBehaviour
         if(isIce)
         {
             isIce = false;
-            graphics.color = fireColor;
-            buttonChangeElement.GetComponent<Image>().sprite = fireIcon;
-            iconNextElement.GetComponent<Image>().sprite = iceIcon;
-            buttonChangeElement.GetComponentInChildren<Text>().text = fireModeText;
-            buttonChangeElement.GetComponentInChildren<Text>().color = fireColor;
+            graphics.color = elementUI.fireColor;
+            elementUI.buttonChangeElement.GetComponent<Image>().sprite = elementUI.fireIcon;
+            elementUI.iconNextElement.GetComponent<Image>().sprite = elementUI.iceIcon;
+            elementUI.buttonChangeElement.GetComponentInChildren<Text>().text = fireModeText;
+            elementUI.buttonChangeElement.GetComponentInChildren<Text>().color = elementUI.fireColor;
+            elementUI.imageStandardSkill.sprite = elementUI.iconProjectileStandardFire;
+            elementUI.imageSpecialSkill.sprite = elementUI.iconProjectileSpecialFire;
         }
         else
         {
             isIce = true;
-            graphics.color = iceColor;
-            buttonChangeElement.GetComponent<Image>().sprite = iceIcon;
-            iconNextElement.GetComponent<Image>().sprite = fireIcon;
-            buttonChangeElement.GetComponentInChildren<Text>().text = iceModeText;
-            buttonChangeElement.GetComponentInChildren<Text>().color = iceColor;
+            graphics.color = elementUI.iceColor;
+            elementUI.buttonChangeElement.GetComponent<Image>().sprite = elementUI.iceIcon;
+            elementUI.iconNextElement.GetComponent<Image>().sprite = elementUI.fireIcon;
+            elementUI.buttonChangeElement.GetComponentInChildren<Text>().text = iceModeText;
+            elementUI.buttonChangeElement.GetComponentInChildren<Text>().color = elementUI.iceColor;
+            elementUI.imageStandardSkill.sprite = elementUI.iconProjectileStandardIce;
+            elementUI.imageSpecialSkill.sprite = elementUI.iconProjectileSpecialIce;
         }
     }
 
     IEnumerator CooldownStandardSkill()
     {
-        float timeLeft = standardSkillCooldownMax;
         standardSkillOnCooldown = true;
-        buttonStandardSkill.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        float timeLeft = standardSkillCooldownMax;
+        elementUI.buttonStandardSkill.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        elementUI.imageStandardSkill.color = new Color(0.5f, 0.5f, 0.5f, 0.5f); 
 
         while (timeLeft > 0.01f)
         {
-            buttonStandardSkill.GetComponentInChildren<Text>().text = " " + timeLeft.ToString();
+            elementUI.buttonStandardSkill.GetComponentInChildren<Text>().text = " " + timeLeft.ToString();
             timeLeft -= 0.1f;
             yield return new WaitForSeconds(0.1f);
         }
 
-        buttonStandardSkill.GetComponentInChildren<Text>().text = "";
-        buttonStandardSkill.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        elementUI.buttonStandardSkill.GetComponentInChildren<Text>().text = "";
+        elementUI.buttonStandardSkill.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        elementUI.imageStandardSkill.color = new Color(1f, 1f, 1f, 1f);
         standardSkillOnCooldown = false;
     }
 
     public IEnumerator CooldownSpecialSkill()
     {
-        float timeLeft = specialSkillCooldownMax;
         specialSkillOnCooldown = true;
-        buttonSpecialSkill.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        float timeLeft = specialSkillCooldownMax;    
+        elementUI.buttonSpecialSkill.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1f);
+        elementUI.imageSpecialSkill.color = new Color(0.5f, 0.5f, 0.5f, 0.5f);
 
         while (timeLeft > 0)
         {
-            buttonSpecialSkill.GetComponentInChildren<Text>().text = " " + timeLeft.ToString();
+            elementUI.buttonSpecialSkill.GetComponentInChildren<Text>().text = " " + timeLeft.ToString();
             timeLeft--;
             yield return new WaitForSeconds(1);
         }
 
-        buttonSpecialSkill.GetComponentInChildren<Text>().text = "";
-        buttonSpecialSkill.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        elementUI.buttonSpecialSkill.GetComponentInChildren<Text>().text = "";
+        elementUI.buttonSpecialSkill.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
+        elementUI.imageSpecialSkill.color = new Color(1f, 1f, 1f, 1f);
         specialSkillOnCooldown = false;
     }
 }

@@ -102,19 +102,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194365882}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 185.68037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1829302925}
   - {fileID: 2133267183}
   - {fileID: 1955832279}
-  m_Father: {fileID: 4314196865249398792}
-  m_RootOrder: 8
+  m_Father: {fileID: 3489650257480442567}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 67.5, y: 16.929993}
+  m_AnchoredPosition: {x: -463, y: -238}
   m_SizeDelta: {x: 69.994995, y: 26.130005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &194365885
@@ -276,17 +276,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286722096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 185.68037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 651676321}
   - {fileID: 150615506}
-  m_Father: {fileID: 4314196865249398792}
-  m_RootOrder: 9
+  m_Father: {fileID: 3489650257480442567}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -151, y: -64}
+  m_AnchoredPosition: {x: 1110, y: 641}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &286722100
@@ -349,7 +349,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -363,7 +363,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 286722099}
   m_OnClick:
     m_PersistentCalls:
@@ -470,12 +470,12 @@ GameObject:
   - component: {fileID: 651676323}
   - component: {fileID: 651676322}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageStandardSkill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &651676321
 RectTransform:
   m_ObjectHideFlags: 0
@@ -634,17 +634,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076058992}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 185.68037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1077860278}
-  m_Father: {fileID: 4314196865249398792}
-  m_RootOrder: 7
+  m_Father: {fileID: 3489650257480442567}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 67.5, y: 65}
+  m_AnchoredPosition: {x: -463, y: -189.93}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1076058996
@@ -940,18 +940,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316881758}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 185.68037}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1434999970}
   - {fileID: 1385855324}
-  m_Father: {fileID: 4314196865249398792}
-  m_RootOrder: 10
+  m_Father: {fileID: 3489650257480442567}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -70.400024, y: -64}
+  m_AnchoredPosition: {x: 1190.6, y: 641}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1316881762
@@ -1014,7 +1014,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1316881761}
   m_OnClick:
     m_PersistentCalls:
@@ -1133,12 +1133,12 @@ GameObject:
   - component: {fileID: 1434999972}
   - component: {fileID: 1434999971}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageSpecialSkill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1434999970
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3744,10 +3744,7 @@ RectTransform:
   - {fileID: 4314196865038941298}
   - {fileID: 4314196864502703987}
   - {fileID: 264576216}
-  - {fileID: 1076058993}
-  - {fileID: 194365883}
-  - {fileID: 286722097}
-  - {fileID: 1316881759}
+  - {fileID: 3489650257480442567}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3816,6 +3813,76 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &4388394031447767987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3489650257480442567}
+  - component: {fileID: 408645549459184107}
+  m_Layer: 0
+  m_Name: Element System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3489650257480442567
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4388394031447767987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -185.68037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1076058993}
+  - {fileID: 194365883}
+  - {fileID: 286722097}
+  - {fileID: 1316881759}
+  m_Father: {fileID: 4314196865249398792}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -375.16125, y: -217.43457}
+  m_SizeDelta: {x: -1820, y: -980}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &408645549459184107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4388394031447767987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fd124f7af1a1654a824e4a25deec150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iceColor: {r: 0, g: 0.86, b: 1, a: 1}
+  fireColor: {r: 1, g: 0.41, b: 0, a: 1}
+  iceIcon: {fileID: 21300000, guid: 24b07b2e12f1bfc4b95c29a0fc2360b8, type: 3}
+  fireIcon: {fileID: 21300000, guid: 3a008ca14f8aff6469ee4cf107e0ddb8, type: 3}
+  buttonChangeElement: {fileID: 1076058994}
+  iconNextElement: {fileID: 1955832280}
+  buttonStandardSkill: {fileID: 0}
+  buttonSpecialSkill: {fileID: 0}
+  imageStandardSkill: {fileID: 651676322}
+  imageSpecialSkill: {fileID: 1434999971}
+  iconProjectileStandardFire: {fileID: 21300000, guid: 2df0a7e1b9f563d4e9bcc3713e2e9781,
+    type: 3}
+  iconProjectileStandardIce: {fileID: 21300000, guid: 66517abeb489d694e965b7bd6b68df82,
+    type: 3}
+  iconProjectileSpecialFire: {fileID: 21300000, guid: e4f7670677f25ec418e9c7821c729a95,
+    type: 3}
+  iconProjectileSpecialIce: {fileID: 21300000, guid: 933039deee5dd6e48a22bf28af1a5d7a,
+    type: 3}
 --- !u!1001 &4314196865307748206
 PrefabInstance:
   m_ObjectHideFlags: 0

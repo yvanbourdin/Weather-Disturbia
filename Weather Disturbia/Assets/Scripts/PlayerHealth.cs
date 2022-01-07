@@ -103,11 +103,11 @@ public class PlayerHealth : MonoBehaviour
 
             if(PlayerElementSkills.instance.isIce)
             {
-                graphics.color = PlayerElementSkills.instance.iceColor;
+                graphics.color = ElementSystemUI.instance.iceColor;
             }
             else
             {
-                graphics.color = PlayerElementSkills.instance.fireColor;
+                graphics.color = ElementSystemUI.instance.fireColor;
             }
             
             yield return new WaitForSeconds(invicibilityFlashDelay);
