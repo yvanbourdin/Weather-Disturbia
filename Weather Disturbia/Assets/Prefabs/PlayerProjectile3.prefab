@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658278649237934968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.581, y: 2.043, z: -1.2675781}
-  m_LocalScale: {x: 22.435825, y: 11.762793, z: 1}
+  m_LocalPosition: {x: -3.602, y: 2.393, z: -1.2675781}
+  m_LocalScale: {x: 9.669841, y: 39.943794, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,8 +71,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_SortingOrder: 15
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 6
   speedProjectile: 150
-  timeBeforeAutoDestroy: 6
+  timeBeforeAutoDestroy: 4
+  isDestructible: 0
   rb: {fileID: 7708258143154186120}
 --- !u!70 &8862526729202013244
 CapsuleCollider2D:

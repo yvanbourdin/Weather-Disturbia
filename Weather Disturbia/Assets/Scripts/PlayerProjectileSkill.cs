@@ -5,6 +5,7 @@ public class PlayerProjectileSkill : MonoBehaviour
     public int damage;
     public float speedProjectile;
     public float timeBeforeAutoDestroy = 3;
+    public bool isDestructible = true;
 
     public Rigidbody2D rb;
 
@@ -42,7 +43,10 @@ public class PlayerProjectileSkill : MonoBehaviour
     {
         if (collision.CompareTag("Ground") || collision.CompareTag("Enemy"))
         {
-            Destroy(gameObject);
+            if (isDestructible)
+            {
+                Destroy(gameObject);
+            }            
         }
     }
 }

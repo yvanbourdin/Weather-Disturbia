@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 15
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -98,6 +98,7 @@ MonoBehaviour:
   damage: 2
   speedProjectile: 400
   timeBeforeAutoDestroy: 3
+  isDestructible: 1
   rb: {fileID: 1154961005419445704}
 --- !u!70 &1623068284
 CapsuleCollider2D:
