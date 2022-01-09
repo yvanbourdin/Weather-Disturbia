@@ -7504,11 +7504,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 130831367842568298, guid: 22f4ef10ce3b92443b314f7e1e801ab8,
-        type: 3}
-      propertyPath: spriteRenderer
-      value: 
-      objectReference: {fileID: 7808078299621110550}
     - target: {fileID: 7077081153400091489, guid: 22f4ef10ce3b92443b314f7e1e801ab8,
         type: 3}
       propertyPath: m_Name
@@ -7571,12 +7566,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22f4ef10ce3b92443b314f7e1e801ab8, type: 3}
---- !u!212 &7808078299621110550 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7077081153538898697, guid: 22f4ef10ce3b92443b314f7e1e801ab8,
-    type: 3}
-  m_PrefabInstance: {fileID: 7808078299621110549}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8054929670058804797
 PrefabInstance:
   m_ObjectHideFlags: 0

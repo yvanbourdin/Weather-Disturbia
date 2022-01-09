@@ -7,10 +7,7 @@ public class PlayerProjectileSkill : MonoBehaviour
     public float timeBeforeAutoDestroy = 3;
     public bool isDestructible = true;
 
-    public Rigidbody2D rb;
-
-    private Vector3 velocity = Vector3.zero;
-    private float horizontalMovement;
+    private Vector3 movement;
 
     void Start()
     {
@@ -25,18 +22,9 @@ public class PlayerProjectileSkill : MonoBehaviour
 
     void Update()
     {
-        horizontalMovement = speedProjectile * Time.deltaTime;
-    }
-
-    void FixedUpdate()
-    {
-        MoveProjectile(horizontalMovement);
-    }
-
-    void MoveProjectile(float _horizontalMovement)
-    {
-        Vector3 targetVelocity = new Vector2(_horizontalMovement, rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref velocity, 0.05f);
+        // Projectile movement
+        movement = Vector3.right * speedProjectile * Time.deltaTime;
+        transform.position += movement;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

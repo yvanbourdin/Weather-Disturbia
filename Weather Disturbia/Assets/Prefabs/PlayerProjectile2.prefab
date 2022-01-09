@@ -96,10 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speedProjectile: 600
+  speedProjectile: 13
   timeBeforeAutoDestroy: 3
   isDestructible: 1
-  rb: {fileID: 2028661598691994172}
 --- !u!70 &873836951777122696
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

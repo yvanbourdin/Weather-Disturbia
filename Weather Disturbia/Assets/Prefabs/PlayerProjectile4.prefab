@@ -52,12 +52,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -137,12 +137,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -222,12 +222,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -307,12 +307,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -392,12 +392,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -477,12 +477,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -562,12 +562,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -647,12 +647,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -732,12 +732,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -817,12 +817,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -902,12 +902,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
@@ -987,12 +987,12 @@ PrefabInstance:
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: speedProjectile
-      value: 200
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7199207676416385715, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
       propertyPath: timeBeforeAutoDestroy
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8856202493758521100, guid: 730dc8e9b6ad49446b34971efbf59924,
         type: 3}
