@@ -99,6 +99,7 @@ MonoBehaviour:
   speedProjectile: 4
   timeBeforeAutoDestroy: 3
   isDestructible: 0
+  canDestroyOtherProjectiles: 1
 --- !u!70 &8862526729202013244
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

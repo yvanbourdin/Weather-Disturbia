@@ -6,6 +6,7 @@ public class PlayerProjectileSkill : MonoBehaviour
     public float speedProjectile;
     public float timeBeforeAutoDestroy = 3;
     public bool isDestructible = true;
+    public bool canDestroyOtherProjectiles = false;
 
     private Vector3 movement;
 
@@ -35,6 +36,10 @@ public class PlayerProjectileSkill : MonoBehaviour
             {
                 Destroy(gameObject);
             }            
+        }
+        if (collision.CompareTag("EnemyProjectile") && canDestroyOtherProjectiles)
+        {
+            Destroy(collision.gameObject);
         }
     }
 }
