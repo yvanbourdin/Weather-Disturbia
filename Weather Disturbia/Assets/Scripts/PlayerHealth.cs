@@ -71,6 +71,7 @@ public class PlayerHealth : MonoBehaviour
             isInvicible = true;
             StartCoroutine(InvicibilityFlash());
             StartCoroutine(HandleInvicibilityDelay());
+            CameraShake.instance.ShakeIt(0.06f, 0.5f);
         }
     }
 

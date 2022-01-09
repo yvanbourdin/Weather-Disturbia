@@ -19,8 +19,9 @@ public class EnemyHealth : MonoBehaviour
     public void ApplyDamage(int _damage)
     {
         currentHealth -= _damage;
+        CameraShake.instance.ShakeIt(0.02f, 0.3f);
 
-        if(currentHealth <= 0)
+        if (currentHealth <= 0)
         {
             Die();
             return;

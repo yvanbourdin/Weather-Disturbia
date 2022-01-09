@@ -979,18 +979,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4314196864905166717}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1076058994 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1076058994, guid: e1f6c877a6f76d04ca31f329bd5b059f,
-    type: 3}
-  m_PrefabInstance: {fileID: 4314196864905166717}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1175383640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6411,18 +6399,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1955832280 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1955832280, guid: e1f6c877a6f76d04ca31f329bd5b059f,
-    type: 3}
-  m_PrefabInstance: {fileID: 4314196864905166717}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1970889011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6784372991269260706, guid: 8a2aeafed5f96d54b9fc72c57c99e9da,
@@ -7790,26 +7766,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4416187137871424216, guid: 23e720c0e91085c419211c4c51044cdd,
-        type: 3}
-      propertyPath: buttonChangeElement
-      value: 
-      objectReference: {fileID: 1076058994}
-    - target: {fileID: 4416187137871424216, guid: 23e720c0e91085c419211c4c51044cdd,
-        type: 3}
-      propertyPath: iconNextElement
-      value: 
-      objectReference: {fileID: 1955832280}
-    - target: {fileID: 4416187137871424216, guid: 23e720c0e91085c419211c4c51044cdd,
-        type: 3}
-      propertyPath: buttonStandardSkill
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4416187137871424216, guid: 23e720c0e91085c419211c4c51044cdd,
-        type: 3}
-      propertyPath: buttonSpecialSkill
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 8996214262754738448, guid: 23e720c0e91085c419211c4c51044cdd,
         type: 3}
       propertyPath: m_LocalPosition.x

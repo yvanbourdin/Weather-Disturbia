@@ -245,14 +245,6 @@ MonoBehaviour:
   projectileSpecialIcePrefab: {fileID: 7924644750274898818, guid: b0607d2a2948bec4d921e786c21aa542,
     type: 3}
   shootPosition: {fileID: 7130641759862667948}
-  iceColor: {r: 0, g: 0.86, b: 1, a: 1}
-  fireColor: {r: 1, g: 0.41, b: 0, a: 1}
-  iceIcon: {fileID: 21300000, guid: 24b07b2e12f1bfc4b95c29a0fc2360b8, type: 3}
-  fireIcon: {fileID: 21300000, guid: 3a008ca14f8aff6469ee4cf107e0ddb8, type: 3}
-  buttonChangeElement: {fileID: 0}
-  iconNextElement: {fileID: 0}
-  buttonStandardSkill: {fileID: 0}
-  buttonSpecialSkill: {fileID: 0}
 --- !u!1 &8996214263663902223
 GameObject:
   m_ObjectHideFlags: 0
