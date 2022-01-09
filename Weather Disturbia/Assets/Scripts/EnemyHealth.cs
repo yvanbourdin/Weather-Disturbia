@@ -3,7 +3,10 @@
 public class EnemyHealth : MonoBehaviour
 {
     public int currentHealth;
+    [Range(0, 100)]
+    public int percentageDropHealPowerUp;
 
+    public GameObject healPowerUpDrop;
     public GameObject objectToDestroy;
     public AudioClip killSound;
 
@@ -31,6 +34,13 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         AudioManager.instance.PlayClipAt(killSound, transform.position);
+
+        // Drop
+        if (Random.value <= percentageDropHealPowerUp / 100f)
+        {
+            Instantiate(healPowerUpDrop, gameObject.transform.position, gameObject.transform.rotation);
+        }
+            
         Destroy(gameObject.transform.parent.gameObject);
     }
 }

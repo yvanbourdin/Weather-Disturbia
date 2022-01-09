@@ -7411,6 +7411,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7612384390196967249, guid: fd52554b348675b42b38b640cbe09c6c,
+        type: 3}
+      propertyPath: percentageDropHealPowerUp
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 8071876727665827163, guid: fd52554b348675b42b38b640cbe09c6c,
         type: 3}
       propertyPath: m_Name

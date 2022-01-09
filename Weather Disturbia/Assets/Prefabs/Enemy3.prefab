@@ -294,6 +294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 10
+  percentageDropHealPowerUp: 75
+  healPowerUpDrop: {fileID: 1882093493773161922, guid: 5dbd0e6ebcf2b214e859c500e8eda232,
+    type: 3}
   objectToDestroy: {fileID: 8071876727665827163}
   killSound: {fileID: 8300000, guid: 7e438a4b12beb1b4590e8d701ce0bfc0, type: 3}
 --- !u!1 &8071876727665827163
