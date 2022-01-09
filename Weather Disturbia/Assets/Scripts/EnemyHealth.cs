@@ -30,6 +30,6 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         AudioManager.instance.PlayClipAt(killSound, transform.position);
-        Destroy(gameObject);
+        Destroy(gameObject.transform.parent.gameObject);
     }
 }
