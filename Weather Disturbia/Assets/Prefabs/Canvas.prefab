@@ -114,7 +114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1019, y: -592.07}
+  m_AnchoredPosition: {x: 70, y: 25}
   m_SizeDelta: {x: 69.994995, y: 26.130005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &194365885
@@ -287,7 +287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 960, y: 556}
+  m_AnchoredPosition: {x: -142.9, y: -54}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &286722100
@@ -870,7 +870,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1019, y: -544}
+  m_AnchoredPosition: {x: 70, y: 73.07001}
   m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1076058996
@@ -1178,7 +1178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1040.6, y: 556}
+  m_AnchoredPosition: {x: -62.30005, y: -54}
   m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1316881762
@@ -4126,7 +4126,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3489650257480442567}
-  - component: {fileID: 408645549459184107}
   m_Layer: 0
   m_Name: Element System
   m_TagString: Untagged
@@ -4155,38 +4154,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -2194, y: -1234}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &408645549459184107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4388394031447767987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fd124f7af1a1654a824e4a25deec150, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iceColor: {r: 0, g: 0.86, b: 1, a: 1}
-  fireColor: {r: 1, g: 0.41, b: 0, a: 1}
-  iceIcon: {fileID: 21300000, guid: 24b07b2e12f1bfc4b95c29a0fc2360b8, type: 3}
-  fireIcon: {fileID: 21300000, guid: 3a008ca14f8aff6469ee4cf107e0ddb8, type: 3}
-  buttonChangeElement: {fileID: 1076058994}
-  iconNextElement: {fileID: 1955832280}
-  buttonStandardSkill: {fileID: 286722098}
-  buttonSpecialSkill: {fileID: 1316881760}
-  imageStandardSkill: {fileID: 651676322}
-  imageSpecialSkill: {fileID: 1434999971}
-  iconProjectileStandardFire: {fileID: 21300000, guid: 2df0a7e1b9f563d4e9bcc3713e2e9781,
-    type: 3}
-  iconProjectileStandardIce: {fileID: 21300000, guid: 66517abeb489d694e965b7bd6b68df82,
-    type: 3}
-  iconProjectileSpecialFire: {fileID: 21300000, guid: e4f7670677f25ec418e9c7821c729a95,
-    type: 3}
-  iconProjectileSpecialIce: {fileID: 21300000, guid: 933039deee5dd6e48a22bf28af1a5d7a,
-    type: 3}
 --- !u!1001 &4314196865307748206
 PrefabInstance:
   m_ObjectHideFlags: 0

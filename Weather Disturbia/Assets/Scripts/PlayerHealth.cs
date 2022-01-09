@@ -93,6 +93,7 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.playerCollider.enabled = true;
         currentHealth = maxHealth;
         healthBar.SetHealth(currentHealth);
+        PlayerElementSkills.instance.ChangeElement();
     }
 
     public IEnumerator InvicibilityFlash()

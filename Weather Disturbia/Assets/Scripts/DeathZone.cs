@@ -3,6 +3,8 @@ using System.Collections;
 
 public class DeathZone : MonoBehaviour
 {
+    public int damageDeathZone = 10;
+
     private Animator fadeSystem;
 
     private void Awake()
@@ -22,6 +24,7 @@ public class DeathZone : MonoBehaviour
     {
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
+        PlayerHealth.instance.TakeDamage(damageDeathZone);
         _collision.transform.position = CurrentSceneManager.instance.respawnPoint;
     }
 }
