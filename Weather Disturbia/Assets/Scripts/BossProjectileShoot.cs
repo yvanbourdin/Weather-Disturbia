@@ -21,13 +21,19 @@ public class BossProjectileShoot : MonoBehaviour
 
     public void ShootProjectile()
     {
-        if (Random.value < 0.5f) // 1st skill
+        int randomSkillNumber = Random.Range(0, 2);
+
+        switch (randomSkillNumber)
         {
-            StartCoroutine(BurstProjectiles());
-        }
-        else // 2nd skill
-        {
-            Instantiate(bossProjectilePrefab2, gameObject.transform.position, gameObject.transform.rotation);
+            case 0:
+                StartCoroutine(BurstProjectiles());
+                break;
+            case 1:
+                Instantiate(bossProjectilePrefab2, gameObject.transform.position, gameObject.transform.rotation);
+                break;
+            case 2:
+                Debug.Log("Skill 3");
+                break;
         }
 
         StartCoroutine(CooldownShootProjectile());

@@ -10265,6 +10265,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2142502953, guid: d8cdfaa4bfafa3e469d5b47c05555397, type: 3}
+      propertyPath: bossProjectilePrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2142502953, guid: d8cdfaa4bfafa3e469d5b47c05555397, type: 3}
+      propertyPath: bossProjectilePrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 3320271423135573937, guid: 5f6c70bac5e551b4ea3e3cdd9d80e072,
+        type: 3}
+    - target: {fileID: 2142502953, guid: d8cdfaa4bfafa3e469d5b47c05555397, type: 3}
+      propertyPath: bossProjectilePrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 1895198948915350739, guid: 7b072932b0fa50e49bb94b20869c055b,
+        type: 3}
+    - target: {fileID: 2142502953, guid: d8cdfaa4bfafa3e469d5b47c05555397, type: 3}
+      propertyPath: bossProjectilePrefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 8348734636990302520, guid: fdcbd62b100abe94e8f989b5bba02a7c,
+        type: 3}
+    - target: {fileID: 2142502953, guid: d8cdfaa4bfafa3e469d5b47c05555397, type: 3}
+      propertyPath: bossProjectilePrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 9222483600173801164, guid: 730dc8e9b6ad49446b34971efbf59924,
+        type: 3}
     - target: {fileID: 3602148287008627853, guid: d8cdfaa4bfafa3e469d5b47c05555397,
         type: 3}
       propertyPath: door
