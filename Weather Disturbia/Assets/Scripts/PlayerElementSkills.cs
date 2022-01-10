@@ -34,12 +34,11 @@ public class PlayerElementSkills : MonoBehaviour
             return;
         }
         instance = this;
-
-        elementUI = ElementSystemUI.instance; // get access to the element UI
     }
 
     void Start()
     {
+        elementUI = ElementSystemUI.instance; // get access to the element UI
         ChangeElement();
     }
 
