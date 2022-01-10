@@ -6,6 +6,7 @@ public class BossProjectileShoot : MonoBehaviour
 {
     public GameObject bossProjectilePrefab1;
     public GameObject bossProjectilePrefab2;
+    public GameObject bossProjectilePrefab3;
     public float bossProjectileCooldownMax;
 
     private bool playerIsInRange = false;
@@ -21,7 +22,9 @@ public class BossProjectileShoot : MonoBehaviour
 
     public void ShootProjectile()
     {
-        int randomSkillNumber = Random.Range(0, 2);
+        int randomSkillNumber = Random.Range(0, 3);
+
+        Debug.Log("randomSkillNumber = " + randomSkillNumber);
 
         switch (randomSkillNumber)
         {
@@ -32,7 +35,7 @@ public class BossProjectileShoot : MonoBehaviour
                 Instantiate(bossProjectilePrefab2, gameObject.transform.position, gameObject.transform.rotation);
                 break;
             case 2:
-                Debug.Log("Skill 3");
+                Instantiate(bossProjectilePrefab3, gameObject.transform.position, gameObject.transform.rotation);
                 break;
         }
 

@@ -48,6 +48,8 @@ MonoBehaviour:
     type: 3}
   bossProjectilePrefab2: {fileID: 1895198948915350739, guid: 7b072932b0fa50e49bb94b20869c055b,
     type: 3}
+  bossProjectilePrefab3: {fileID: 7439152749651647727, guid: 3798cd3509bb17847b63a523fda20624,
+    type: 3}
   bossProjectileCooldownMax: 2
 --- !u!58 &2142502952
 CircleCollider2D:
