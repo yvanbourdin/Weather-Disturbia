@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a18fb3af8c32638408dc686c2b7a6568, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardSkillCooldownMax: 0.5
+  standardSkillCooldownMax: 0.3
   specialSkillCooldownMax: 5
   isIce: 0
   graphics: {fileID: 8996214262754738449}

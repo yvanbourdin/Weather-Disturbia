@@ -9,7 +9,6 @@ public class EnemyProjectileSkill : MonoBehaviour
     private Vector3 targetPlayerPosition;
     private Vector3 moveDiv;
 
-
     void Start()
     {
         targetPlayerPosition = PlayerMovement.instance.GetComponent<Transform>().position;
