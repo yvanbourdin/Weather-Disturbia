@@ -7,6 +7,7 @@ public class PlayerElementSkills : MonoBehaviour
     public float standardSkillCooldownMax;
     public float specialSkillCooldownMax;
     public bool isIce;
+    public float bonusSpeedInIceMode;
 
     public SpriteRenderer graphics;
 
@@ -103,6 +104,7 @@ public class PlayerElementSkills : MonoBehaviour
             elementUI.buttonChangeElement.GetComponentInChildren<Text>().color = elementUI.fireColor;
             elementUI.imageStandardSkill.sprite = elementUI.iconProjectileStandardFire;
             elementUI.imageSpecialSkill.sprite = elementUI.iconProjectileSpecialFire;
+            PlayerMovement.instance.moveSpeed -= bonusSpeedInIceMode;
         }
         else
         {
@@ -114,6 +116,7 @@ public class PlayerElementSkills : MonoBehaviour
             elementUI.buttonChangeElement.GetComponentInChildren<Text>().color = elementUI.iceColor;
             elementUI.imageStandardSkill.sprite = elementUI.iconProjectileStandardIce;
             elementUI.imageSpecialSkill.sprite = elementUI.iconProjectileSpecialIce;
+            PlayerMovement.instance.moveSpeed += bonusSpeedInIceMode;
         }
     }
 

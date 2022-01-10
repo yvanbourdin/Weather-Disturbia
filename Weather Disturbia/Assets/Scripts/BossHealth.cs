@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossHealth : MonoBehaviour
 {
     public int currentHealth;
+    public int damageOnCollision = 30;
 
     public GameObject door;
     public GameObject objectToDestroy;
@@ -18,6 +19,15 @@ public class BossHealth : MonoBehaviour
         {
             int damage = collision.gameObject.GetComponent<PlayerProjectileSkill>().damage;
             ApplyDamage(damage);
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
+            playerHealth.TakeDamage(damageOnCollision);
         }
     }
 

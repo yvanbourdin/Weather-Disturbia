@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 35
+  damageOnCollision: 30
   door: {fileID: 0}
   objectToDestroy: {fileID: 6149290601038110500}
   killSound: {fileID: 8300000, guid: 7e438a4b12beb1b4590e8d701ce0bfc0, type: 3}
