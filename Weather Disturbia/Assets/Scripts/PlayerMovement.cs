@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     private float horizontalMovement;
     private float verticalMovement;
+    private Vector3 gemmeOffset; // get the initial position of the gemme where the projectiles are launched
+    private SpriteRenderer gemme; // get the reference to the player's gemme sprite
 
     public static PlayerMovement instance;
 
@@ -34,6 +36,12 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         instance = this;
+    }
+
+    private void Start()
+    {
+        gemme = PlayerElementSkills.instance.shootPosition.GetChild(0).GetComponent<SpriteRenderer>();
+        gemmeOffset = new Vector3(gemme.transform.localPosition.x, gemme.transform.localPosition.y, 0);
     }
 
     void Update()
@@ -85,19 +93,25 @@ public class PlayerMovement : MonoBehaviour
     void Flip(float _velocity)
     {
         // Flip the sprite and the origine point of the player's projectile
-        if (_velocity > 0.1f)
+        if (_velocity > 0.1f) // RIGHT
         {
             spriteRenderer.flipX = false;
             PlayerElementSkills.instance.shootPosition.transform.position = new Vector3(gameObject.transform.position.x + 1,
                                                                                         PlayerElementSkills.instance.shootPosition.transform.position.y, 
                                                                                         0);
+            // Flip the gemme
+            gemme.transform.localPosition = new Vector3(gemmeOffset.x, gemmeOffset.y, 0);
+            gemme.flipX = true;
         }
-        else if(_velocity < -0.1f)
+        else if(_velocity < -0.1f) // LEFT
         {
             spriteRenderer.flipX = true;
             PlayerElementSkills.instance.shootPosition.transform.position = new Vector3(gameObject.transform.position.x - 1, 
                                                                                         PlayerElementSkills.instance.shootPosition.transform.position.y, 
                                                                                         0);
+            // Flip the gemme
+            gemme.transform.localPosition = new Vector3(-gemmeOffset.x, gemmeOffset.y, 0);
+            gemme.flipX = false;
         }
     }
 

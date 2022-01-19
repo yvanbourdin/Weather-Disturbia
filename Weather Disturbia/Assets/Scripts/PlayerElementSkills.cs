@@ -16,6 +16,8 @@ public class PlayerElementSkills : MonoBehaviour
     public GameObject projectileSpecialFirePrefab;
     public GameObject projectileSpecialIcePrefab;
     public Transform shootPosition;
+    public Sprite fireGemme;
+    public Sprite iceGemme;
 
     private ElementSystemUI elementUI; // get all UI about element (icons, sprites, buttons...)
 
@@ -95,7 +97,11 @@ public class PlayerElementSkills : MonoBehaviour
     {
         if(isIce)
         {
-            isIce = false;
+            isIce = false; 
+            PlayerMovement.instance.moveSpeed -= bonusSpeedInIceMode;
+            shootPosition.gameObject.GetComponentInChildren<SpriteRenderer>().sprite = fireGemme;
+
+            // UI
             graphics.color = elementUI.fireColor;
             elementUI.buttonChangeElement.GetComponent<Image>().sprite = elementUI.fireIcon;
             elementUI.iconNextElement.GetComponent<Image>().sprite = elementUI.iceIcon;
@@ -103,11 +109,14 @@ public class PlayerElementSkills : MonoBehaviour
             elementUI.buttonChangeElement.GetComponentInChildren<Text>().color = elementUI.fireColor;
             elementUI.imageStandardSkill.sprite = elementUI.iconProjectileStandardFire;
             elementUI.imageSpecialSkill.sprite = elementUI.iconProjectileSpecialFire;
-            PlayerMovement.instance.moveSpeed -= bonusSpeedInIceMode;
         }
         else
         {
             isIce = true;
+            PlayerMovement.instance.moveSpeed += bonusSpeedInIceMode;
+            shootPosition.gameObject.GetComponentInChildren<SpriteRenderer>().sprite = iceGemme;
+
+            // UI
             graphics.color = elementUI.iceColor;
             elementUI.buttonChangeElement.GetComponent<Image>().sprite = elementUI.iceIcon;
             elementUI.iconNextElement.GetComponent<Image>().sprite = elementUI.fireIcon;
@@ -115,7 +124,6 @@ public class PlayerElementSkills : MonoBehaviour
             elementUI.buttonChangeElement.GetComponentInChildren<Text>().color = elementUI.iceColor;
             elementUI.imageStandardSkill.sprite = elementUI.iconProjectileStandardIce;
             elementUI.imageSpecialSkill.sprite = elementUI.iconProjectileSpecialIce;
-            PlayerMovement.instance.moveSpeed += bonusSpeedInIceMode;
         }
     }
 
