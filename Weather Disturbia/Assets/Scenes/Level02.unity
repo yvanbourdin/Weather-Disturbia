@@ -176,6 +176,18 @@ PrefabInstance:
       propertyPath: iconNextElement
       value: 
       objectReference: {fileID: 545062119}
+    - target: {fileID: 4416187137871424216, guid: 23e720c0e91085c419211c4c51044cdd,
+        type: 3}
+      propertyPath: fireGemme
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b92c00aa89d348499b1476f276ccbfd,
+        type: 3}
+    - target: {fileID: 4416187137871424216, guid: 23e720c0e91085c419211c4c51044cdd,
+        type: 3}
+      propertyPath: iceGemme
+      value: 
+      objectReference: {fileID: 21300000, guid: 1c8109fc987325b429c961f50e5ec55d,
+        type: 3}
     - target: {fileID: 8996214262754738448, guid: 23e720c0e91085c419211c4c51044cdd,
         type: 3}
       propertyPath: m_LocalPosition.x
