@@ -14,7 +14,8 @@ public class DeathZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        // Replace the player at the spawn point if he falls in the death zone
+        if (collision.CompareTag("Player"))
         {
             StartCoroutine(ReplacePlayer(collision));
         }

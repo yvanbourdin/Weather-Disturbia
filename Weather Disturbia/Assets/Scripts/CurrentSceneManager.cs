@@ -3,7 +3,7 @@
 public class CurrentSceneManager : MonoBehaviour
 {
     public int coinsPickedUpInThisSceneCount; // Delete the amount of picked up coins if the player dies during the level
-    public Vector3 respawnPoint;
+    public Vector3 respawnPoint; // first spawn point
     public int levelToUnlock;
 
     public static CurrentSceneManager instance;

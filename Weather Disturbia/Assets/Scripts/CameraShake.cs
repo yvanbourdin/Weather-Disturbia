@@ -30,6 +30,7 @@ public class CameraShake : MonoBehaviour
         Invoke("StopCameraShaking", shakeTime);
     }
 
+    // Camera movements
     void StartCameraShaking()
     {
         float cameraShakingOffsetX = Random.value * shakeMagnitude * 2 - shakeMagnitude;

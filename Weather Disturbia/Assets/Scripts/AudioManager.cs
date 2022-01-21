@@ -23,12 +23,14 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
+        // Play the musics
         audioSource.clip = playlist[0];
         audioSource.Play();
     }
 
     void Update()
     {
+        // If the music is finished, play the next one
         if(!audioSource.isPlaying)
         {
             PlayNextSong();
@@ -37,7 +39,7 @@ public class AudioManager : MonoBehaviour
 
     void PlayNextSong()
     {
-        musicIndex = (musicIndex + 1) % playlist.Length;
+        musicIndex = (musicIndex + 1) % playlist.Length; //Looping the playlist when the last music is finished
         audioSource.clip = playlist[musicIndex];
         audioSource.Play();
     }
